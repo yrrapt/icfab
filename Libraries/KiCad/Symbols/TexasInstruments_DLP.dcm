@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DLP3310AFQM
+D Digital Micromirror Device (DMD) modulates light through rotating MEMs mirrors, 1920x1080 resolution.
+F http://www.ti.com/lit/ds/symlink/dlp3310.pdf
+$ENDCMP
+#
+#End Doc Library
