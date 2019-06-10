@@ -1,0 +1,440 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 10
+Title "DLP Controller GPIO Ports"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 5200 1500 0    50   ~ 0
+Master
+Text Notes 5000 4950 0    50   ~ 0
+Slave
+$Comp
+L Device:R R?
+U 1 1 5D5B9501
+P 3700 6850
+F 0 "R?" V 3441 6850 50  0000 C CNN
+F 1 "7.87k" V 3532 6850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3604 6850 25  0000 C CNN
+F 3 "~" H 3700 6850 50  0001 C CNN
+	1    3700 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5BCDCF
+P 3400 6950
+F 0 "#PWR?" H 3400 6700 50  0001 C CNN
+F 1 "GND" H 3405 6777 50  0000 C CNN
+F 2 "" H 3400 6950 50  0001 C CNN
+F 3 "" H 3400 6950 50  0001 C CNN
+	1    3400 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 6850 4900 6850
+Wire Wire Line
+	3550 6850 3400 6850
+Wire Wire Line
+	3400 6850 3400 6950
+Text Label 4000 6850 0    50   ~ 0
+SLAVE_ID
+NoConn ~ 4900 6950
+NoConn ~ 4900 7050
+NoConn ~ 4900 7150
+NoConn ~ 4900 7250
+NoConn ~ 4900 6350
+NoConn ~ 4900 6450
+NoConn ~ 4900 6550
+NoConn ~ 4900 6650
+NoConn ~ 4900 6750
+$Comp
+L Device:R R?
+U 1 1 5D5C44F1
+P 3750 5050
+F 0 "R?" V 3491 5050 50  0000 C CNN
+F 1 "30.1R" V 3582 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3654 5050 25  0000 C CNN
+F 3 "~" H 3750 5050 50  0001 C CNN
+	1    3750 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5C4E36
+P 3750 5450
+F 0 "R?" V 3491 5450 50  0000 C CNN
+F 1 "30.1R" V 3582 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3654 5450 25  0000 C CNN
+F 3 "~" H 3750 5450 50  0001 C CNN
+	1    3750 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 5450 4900 5450
+Wire Wire Line
+	3900 5050 4050 5050
+Wire Wire Line
+	4050 5050 4050 5350
+Wire Wire Line
+	4050 5350 4900 5350
+Text Label 4150 5350 0    50   ~ 0
+sHBT_ODAT
+Text Label 4150 5450 0    50   ~ 0
+sHBT_OCLK
+Wire Wire Line
+	3000 5050 3600 5050
+Wire Wire Line
+	3000 5450 3600 5450
+Text Label 3000 5050 0    50   ~ 0
+HBT_IDAT
+Text Label 3000 5450 0    50   ~ 0
+HBT_ICLK
+Wire Wire Line
+	4150 5550 4900 5550
+Wire Wire Line
+	4150 5650 4900 5650
+Wire Wire Line
+	4150 5750 4900 5750
+Wire Wire Line
+	4150 5850 4900 5850
+$Comp
+L TexasInstruments_DLP:DLPC3437 U?
+U 8 1 5D5AC5B0
+P 4900 5350
+F 0 "U?" H 5731 4453 60  0000 L CNN
+F 1 "DLPC3437" H 5731 4347 60  0000 L CNN
+F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 5900 5700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 4900 5350 50  0001 C CNN
+	8    4900 5350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 5950
+Text Label 4150 5550 0    50   ~ 0
+sHBT_IDAT
+Text Label 4150 5650 0    50   ~ 0
+sHBT_ICLK
+Text Label 4150 5750 0    50   ~ 0
+DA_SYNC_FSD12
+Text Label 4150 5850 0    50   ~ 0
+SEQ_SYNC
+Text HLabel 4150 6050 0    50   Input ~ 0
+FPGA_RDY
+Text HLabel 4150 6150 0    50   Output ~ 0
+ACT_SYNC
+Text HLabel 4150 6250 0    50   Input ~ 0
+SUB_FRAME
+Wire Wire Line
+	4150 6050 4900 6050
+Wire Wire Line
+	4150 6150 4900 6150
+Wire Wire Line
+	4150 6250 4900 6250
+$Comp
+L Device:R R?
+U 1 1 5D5EE0BE
+P 6850 1100
+F 0 "R?" V 6591 1100 50  0000 C CNN
+F 1 "30.1R" V 6682 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6754 1100 25  0000 C CNN
+F 3 "~" H 6850 1100 50  0001 C CNN
+	1    6850 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5EE0C4
+P 6850 1500
+F 0 "R?" V 6591 1500 50  0000 C CNN
+F 1 "30.1R" V 6682 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6754 1500 25  0000 C CNN
+F 3 "~" H 6850 1500 50  0001 C CNN
+	1    6850 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 1500 8000 1500
+Wire Wire Line
+	7000 1100 7150 1100
+Wire Wire Line
+	7150 1100 7150 1400
+Wire Wire Line
+	7150 1400 8000 1400
+Text Label 7250 1400 0    50   ~ 0
+HBT_ODAT
+Text Label 7250 1500 0    50   ~ 0
+HBT_OCLK
+Wire Wire Line
+	6100 1100 6700 1100
+Wire Wire Line
+	6100 1500 6700 1500
+Text Label 6100 1100 0    50   ~ 0
+sHBT_IDAT
+Text Label 6100 1500 0    50   ~ 0
+sHBT_ICLK
+$Comp
+L TexasInstruments_DLP:DLPC3437 U?
+U 8 1 5D5EE0D4
+P 8000 1400
+F 0 "U?" H 8831 503 60  0000 L CNN
+F 1 "DLPC3437" H 8831 397 60  0000 L CNN
+F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 9000 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 8000 1400 50  0001 C CNN
+	8    8000 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1600 8000 1600
+Text Label 7250 1600 0    50   ~ 0
+HBT_IDAT
+NoConn ~ 8000 2700
+Wire Wire Line
+	7250 1700 8000 1700
+Wire Wire Line
+	7250 1800 8000 1800
+Wire Wire Line
+	7250 2000 8000 2000
+Wire Wire Line
+	7250 2100 8000 2100
+Wire Wire Line
+	7250 2200 8000 2200
+Wire Wire Line
+	7250 2300 8000 2300
+Wire Wire Line
+	7250 2400 8000 2400
+Wire Wire Line
+	7250 2500 8000 2500
+Wire Wire Line
+	7250 2600 8000 2600
+Text Label 7250 1700 0    50   ~ 0
+HBT_ICLK
+Text Label 7250 1800 0    50   ~ 0
+DA_SYNC_FSD12
+$Comp
+L Device:R R?
+U 1 1 5D611B7A
+P 6850 1900
+F 0 "R?" V 6591 1900 50  0000 C CNN
+F 1 "7.87k" V 6682 1900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6754 1900 25  0000 C CNN
+F 3 "~" H 6850 1900 50  0001 C CNN
+	1    6850 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5D6126B9
+P 6350 1750
+F 0 "#PWR?" H 6350 1600 50  0001 C CNN
+F 1 "+1V8" H 6365 1923 50  0000 C CNN
+F 2 "" H 6350 1750 50  0001 C CNN
+F 3 "" H 6350 1750 50  0001 C CNN
+	1    6350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1900 6350 1900
+Wire Wire Line
+	6350 1900 6350 1750
+Wire Wire Line
+	7000 1900 8000 1900
+Text Label 7250 1900 0    50   ~ 0
+SEQ_SYNC
+Text Label 7250 2000 0    50   ~ 0
+CAL_PWR
+Text Label 7250 2100 0    50   ~ 0
+LS2_PWR
+Text Label 7250 2200 0    50   ~ 0
+THERM_PWR
+Text HLabel 7250 2300 0    50   Output ~ 0
+RC_CHARGE
+Text Label 7250 2400 0    50   ~ 0
+LS_PWR
+Text HLabel 7250 2500 0    50   Input ~ 0
+PROJ_ON
+Text Label 7250 2600 0    50   ~ 0
+LABB_SAMPLE
+Wire Wire Line
+	7250 2800 8000 2800
+Text Label 7250 2800 0    50   ~ 0
+mGPIO_5
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D61BAC7
+P 7250 2800
+F 0 "TP?" V 7353 2872 50  0000 C CNN
+F 1 "TestPoint" V 7354 2872 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7450 2800 50  0001 C CNN
+F 3 "~" H 7450 2800 50  0001 C CNN
+	1    7250 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D61DBDC
+P 6250 2400
+F 0 "R?" H 6180 2328 50  0000 R CNN
+F 1 "7.87k" H 6180 2419 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" H 6180 2491 25  0000 R CNN
+F 3 "~" H 6250 2400 50  0001 C CNN
+	1    6250 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D61E3EC
+P 3600 2700
+F 0 "R?" V 3341 2700 50  0000 C CNN
+F 1 "7.87k" V 3432 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3504 2700 25  0000 C CNN
+F 3 "~" H 3600 2700 50  0001 C CNN
+	1    3600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D61EF07
+P 3600 3100
+F 0 "R?" V 3341 3100 50  0000 C CNN
+F 1 "7.87k" V 3432 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3504 3100 25  0000 C CNN
+F 3 "~" H 3600 3100 50  0001 C CNN
+	1    3600 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D61F8B6
+P 3600 3500
+F 0 "R?" V 3341 3500 50  0000 C CNN
+F 1 "7.87k" V 3432 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3504 3500 25  0000 C CNN
+F 3 "~" H 3600 3500 50  0001 C CNN
+	1    3600 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D620025
+P 5600 2400
+F 0 "R?" H 5530 2328 50  0000 R CNN
+F 1 "100k" H 5530 2419 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" H 5530 2491 25  0000 R CNN
+F 3 "~" H 5600 2400 50  0001 C CNN
+	1    5600 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D620FF7
+P 5000 2400
+F 0 "R?" H 4930 2328 50  0000 R CNN
+F 1 "100k" H 4930 2419 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" H 4930 2491 25  0000 R CNN
+F 3 "~" H 5000 2400 50  0001 C CNN
+	1    5000 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D621EDB
+P 4400 2400
+F 0 "R?" H 4330 2328 50  0000 R CNN
+F 1 "100k" H 4330 2419 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" H 4330 2491 25  0000 R CNN
+F 3 "~" H 4400 2400 50  0001 C CNN
+	1    4400 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2550 5600 3000
+Wire Wire Line
+	5600 3000 8000 3000
+Wire Wire Line
+	5000 2550 5000 3100
+Wire Wire Line
+	5000 3100 8000 3100
+Wire Wire Line
+	4400 2550 4400 3200
+Wire Wire Line
+	4400 3200 8000 3200
+Wire Wire Line
+	5600 2250 5600 2100
+Wire Wire Line
+	5600 2100 5000 2100
+Wire Wire Line
+	4400 2100 4400 2250
+Wire Wire Line
+	5000 2250 5000 2100
+Connection ~ 5000 2100
+Wire Wire Line
+	5000 2100 4400 2100
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5D68D77C
+P 4400 1950
+F 0 "#PWR?" H 4400 1800 50  0001 C CNN
+F 1 "+1V8" H 4415 2123 50  0000 C CNN
+F 2 "" H 4400 1950 50  0001 C CNN
+F 3 "" H 4400 1950 50  0001 C CNN
+	1    4400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1950 4400 2100
+Connection ~ 4400 2100
+Text HLabel 3250 2700 0    50   Output ~ 0
+SPI1_CSZ0
+Wire Wire Line
+	6250 2250 6250 2100
+Wire Wire Line
+	6250 2100 5600 2100
+Connection ~ 5600 2100
+Wire Wire Line
+	8000 2900 6250 2900
+Wire Wire Line
+	6250 2900 6250 2550
+Wire Wire Line
+	5600 3000 4050 3000
+Wire Wire Line
+	4050 3000 4050 2700
+Wire Wire Line
+	4050 2700 3750 2700
+Connection ~ 5600 3000
+Wire Wire Line
+	3450 2700 3250 2700
+Wire Wire Line
+	5000 3100 3750 3100
+Connection ~ 5000 3100
+Wire Wire Line
+	4400 3200 4050 3200
+Wire Wire Line
+	4050 3200 4050 3500
+Wire Wire Line
+	4050 3500 3750 3500
+Connection ~ 4400 3200
+Text HLabel 3250 3100 0    50   Output ~ 0
+SPI1_DOUT
+Text HLabel 3250 3500 0    50   Output ~ 0
+SPI1_CLK
+Text HLabel 3250 3800 0    50   Input ~ 0
+SPI1_DIN
+Wire Wire Line
+	3250 3100 3450 3100
+Wire Wire Line
+	3250 3500 3450 3500
+Wire Wire Line
+	3250 3800 4150 3800
+Wire Wire Line
+	4150 3800 4150 3300
+Wire Wire Line
+	4150 3300 8000 3300
+$EndSCHEMATC

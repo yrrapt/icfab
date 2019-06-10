@@ -1,0 +1,93 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1N5711
+D 70V 33mA Schottky diode, DO-35
+K diode Schottky
+F https://www.microsemi.com/document-portal/doc_download/8865-lds-0040-datasheet
+$ENDCMP
+#
+$CMP 1N5712
+D 20V 75mA Schottky diode, DO-35
+K diode Schottky
+F https://www.microsemi.com/document-portal/doc_download/8865-lds-0040-datasheet
+$ENDCMP
+#
+$CMP 1N6857
+D 20V 150mA Schottky diode, DO-35
+K diode Schottky
+F https://www.microsemi.com/document-portal/doc_download/8865-lds-0040-datasheet
+$ENDCMP
+#
+$CMP 1N6858
+D 70V 75mA Schottky diode, DO-35
+K diode Schottky
+F https://www.microsemi.com/document-portal/doc_download/8865-lds-0040-datasheet
+$ENDCMP
+#
+$CMP BAT41
+D 100V 0.1A Small Signal Schottky Diode, DO-35
+K diode Schottky
+F http://www.vishay.com/docs/85659/bat41.pdf
+$ENDCMP
+#
+$CMP BAT42
+D 30V 0.2A Small Signal Schottky Diode, DO-35
+K diode Schottky
+F http://www.vishay.com/docs/85660/bat42.pdf
+$ENDCMP
+#
+$CMP BAT43
+D 30V 0.2A Small Signal Schottky Diode, DO-35
+K diode Schottky
+F http://www.vishay.com/docs/85660/bat42.pdf
+$ENDCMP
+#
+$CMP BAT46
+D 100V 0.15A Small Signal Schottky Diode, DO-35
+K diode Schottky
+F http://www.vishay.com/docs/85662/bat46.pdf
+$ENDCMP
+#
+$CMP BAT48RL
+D 40V 0.35A Small Signal Schottky Diode, DO-35
+K diode Schottky
+F www.st.com/resource/en/datasheet/bat48.pdf
+$ENDCMP
+#
+$CMP BAT85
+D 30V 0.2A Schottky barrier single diode, DO-35
+K diode Schottky
+F https://assets.nexperia.com/documents/data-sheet/BAT85.pdf
+$ENDCMP
+#
+$CMP BAT86
+D 50V 0.2A Small Signal Schottky Diode, DO-35
+K diode Schottky
+F https://assets.nexperia.com/documents/data-sheet/BAT86.pdf
+$ENDCMP
+#
+$CMP BAT86S
+D 50V 0.2A Small Signal Schottky Diode, DO-35
+K diode Schottky
+F http://www.vishay.com/docs/85514/bat86s.pdf
+$ENDCMP
+#
+$CMP DSB2810
+D 20V 75mA Schottky diode, DO-35
+K diode Schottky
+F https://www.microsemi.com/document-portal/doc_download/8865-lds-0040-datasheet
+$ENDCMP
+#
+$CMP DSB5712
+D 20V 75mA Schottky diode, DO-35
+K diode Schottky
+F https://www.microsemi.com/document-portal/doc_download/8865-lds-0040-datasheet
+$ENDCMP
+#
+$CMP ESDA18-1K
+D 18V ESD protection diode
+K diode ESD
+F https://nl.mouser.com/datasheet/2/389/esda-1k-954621.pdf
+$ENDCMP
+#
+#End Doc Library

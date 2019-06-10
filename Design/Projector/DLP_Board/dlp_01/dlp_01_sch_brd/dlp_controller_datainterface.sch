@@ -1,0 +1,518 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 7 10
+Title "DLP Controller Data Interface"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5E8FA7FC
+P 5900 7350
+F 0 "R?" H 5970 7422 50  0000 L CNN
+F 1 "7.87k" H 5970 7331 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5970 7259 25  0000 L CNN
+F 3 "~" H 5900 7350 50  0001 C CNN
+	1    5900 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E8FBDE2
+P 5900 7600
+F 0 "#PWR?" H 5900 7350 50  0001 C CNN
+F 1 "GND" H 5905 7427 50  0000 C CNN
+F 2 "" H 5900 7600 50  0001 C CNN
+F 3 "" H 5900 7600 50  0001 C CNN
+	1    5900 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 7600 5900 7500
+Wire Wire Line
+	5900 7200 5900 7150
+$Comp
+L Device:R R?
+U 1 1 5E8FC7AE
+P 6100 3500
+F 0 "R?" V 5841 3500 50  0000 C CNN
+F 1 "7.87k" V 5932 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6004 3500 25  0000 C CNN
+F 3 "~" H 6100 3500 50  0001 C CNN
+	1    6100 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E8FE7BE
+P 6300 3700
+F 0 "#PWR?" H 6300 3450 50  0001 C CNN
+F 1 "GND" H 6305 3527 50  0000 C CNN
+F 2 "" H 6300 3700 50  0001 C CNN
+F 3 "" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3700 6300 3500
+Wire Wire Line
+	6300 3500 6250 3500
+Wire Wire Line
+	5850 4200 5850 3500
+Wire Wire Line
+	5850 3500 5950 3500
+Text HLabel 5500 4100 0    50   Input ~ 0
+PCLK_B
+Text HLabel 5500 4200 0    50   Output ~ 0
+PDM_CVS_TE_B
+Wire Wire Line
+	5500 4200 5850 4200
+Connection ~ 5850 4200
+Text HLabel 5500 4300 0    50   Input ~ 0
+VSYNC_B
+Text HLabel 5500 4400 0    50   Input ~ 0
+HSYNC_B
+Text HLabel 5500 4500 0    50   Input ~ 0
+DATEN_B
+Wire Bus Line
+	5500 4600 5550 4600
+Text HLabel 5500 4600 0    50   Input ~ 0
+PDAT_B_[23..0]
+Entry Wire Line
+	5550 4700 5650 4600
+Wire Wire Line
+	5500 4100 6250 4100
+Wire Wire Line
+	5500 4500 6250 4500
+Wire Wire Line
+	5500 4300 6250 4300
+Wire Wire Line
+	5900 7000 6250 7000
+Wire Wire Line
+	5500 4400 6250 4400
+Wire Wire Line
+	6250 4200 5850 4200
+Wire Wire Line
+	5650 4600 6250 4600
+$Comp
+L TexasInstruments_DLP:DLPC3437 U?
+U 4 1 5E8F23F1
+P 6250 4100
+F 0 "U?" H 6450 4350 60  0000 L CNN
+F 1 "DLPC3437" H 6450 4250 60  0000 L CNN
+F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 7250 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 6250 4100 50  0001 C CNN
+	4    6250 4100
+	1    0    0    -1  
+$EndComp
+Text Label 5650 4600 0    50   ~ 0
+PDAT_B_0
+Entry Wire Line
+	5550 4800 5650 4700
+Wire Wire Line
+	5650 4700 6250 4700
+Text Label 5650 4700 0    50   ~ 0
+PDAT_B_1
+Entry Wire Line
+	5550 4900 5650 4800
+Wire Wire Line
+	5650 4800 6250 4800
+Text Label 5650 4800 0    50   ~ 0
+PDAT_B_2
+Entry Wire Line
+	5550 5000 5650 4900
+Wire Wire Line
+	5650 4900 6250 4900
+Text Label 5650 4900 0    50   ~ 0
+PDAT_B_3
+Entry Wire Line
+	5550 5100 5650 5000
+Wire Wire Line
+	5650 5000 6250 5000
+Text Label 5650 5000 0    50   ~ 0
+PDAT_B_4
+Entry Wire Line
+	5550 5200 5650 5100
+Wire Wire Line
+	5650 5100 6250 5100
+Text Label 5650 5100 0    50   ~ 0
+PDAT_B_5
+Entry Wire Line
+	5550 5300 5650 5200
+Wire Wire Line
+	5650 5200 6250 5200
+Text Label 5650 5200 0    50   ~ 0
+PDAT_B_6
+Entry Wire Line
+	5550 5400 5650 5300
+Wire Wire Line
+	5650 5300 6250 5300
+Text Label 5650 5300 0    50   ~ 0
+PDAT_B_7
+Entry Wire Line
+	5550 5500 5650 5400
+Wire Wire Line
+	5650 5400 6250 5400
+Text Label 5650 5400 0    50   ~ 0
+PDAT_B_8
+Entry Wire Line
+	5550 5600 5650 5500
+Wire Wire Line
+	5650 5500 6250 5500
+Text Label 5650 5500 0    50   ~ 0
+PDAT_B_9
+Entry Wire Line
+	5550 5700 5650 5600
+Wire Wire Line
+	5650 5600 6250 5600
+Text Label 5650 5600 0    50   ~ 0
+PDAT_B_10
+Entry Wire Line
+	5550 5800 5650 5700
+Wire Wire Line
+	5650 5700 6250 5700
+Text Label 5650 5700 0    50   ~ 0
+PDAT_B_11
+Entry Wire Line
+	5550 5900 5650 5800
+Wire Wire Line
+	5650 5800 6250 5800
+Text Label 5650 5800 0    50   ~ 0
+PDAT_B_12
+Entry Wire Line
+	5550 6000 5650 5900
+Wire Wire Line
+	5650 5900 6250 5900
+Text Label 5650 5900 0    50   ~ 0
+PDAT_B_13
+Entry Wire Line
+	5550 6100 5650 6000
+Wire Wire Line
+	5650 6000 6250 6000
+Text Label 5650 6000 0    50   ~ 0
+PDAT_B_14
+Entry Wire Line
+	5550 6200 5650 6100
+Wire Wire Line
+	5650 6100 6250 6100
+Text Label 5650 6100 0    50   ~ 0
+PDAT_B_15
+Entry Wire Line
+	5550 6300 5650 6200
+Wire Wire Line
+	5650 6200 6250 6200
+Text Label 5650 6200 0    50   ~ 0
+PDAT_B_16
+Entry Wire Line
+	5550 6400 5650 6300
+Wire Wire Line
+	5650 6300 6250 6300
+Text Label 5650 6300 0    50   ~ 0
+PDAT_B_17
+Entry Wire Line
+	5550 6500 5650 6400
+Wire Wire Line
+	5650 6400 6250 6400
+Text Label 5650 6400 0    50   ~ 0
+PDAT_B_18
+Entry Wire Line
+	5550 6600 5650 6500
+Wire Wire Line
+	5650 6500 6250 6500
+Text Label 5650 6500 0    50   ~ 0
+PDAT_B_19
+Entry Wire Line
+	5550 6700 5650 6600
+Wire Wire Line
+	5650 6600 6250 6600
+Text Label 5650 6600 0    50   ~ 0
+PDAT_B_20
+Entry Wire Line
+	5550 6800 5650 6700
+Wire Wire Line
+	5650 6700 6250 6700
+Text Label 5650 6700 0    50   ~ 0
+PDAT_B_21
+Entry Wire Line
+	5550 6900 5650 6800
+Wire Wire Line
+	5650 6800 6250 6800
+Text Label 5650 6800 0    50   ~ 0
+PDAT_B_22
+Entry Wire Line
+	5550 7000 5650 6900
+Wire Wire Line
+	5650 6900 6250 6900
+Text Label 5650 6900 0    50   ~ 0
+PDAT_B_23
+$Comp
+L Device:R R?
+U 1 1 5E95C735
+P 9900 7350
+F 0 "R?" H 9970 7422 50  0000 L CNN
+F 1 "7.87k" H 9970 7331 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 9970 7259 25  0000 L CNN
+F 3 "~" H 9900 7350 50  0001 C CNN
+	1    9900 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E95C73F
+P 9900 7600
+F 0 "#PWR?" H 9900 7350 50  0001 C CNN
+F 1 "GND" H 9905 7427 50  0000 C CNN
+F 2 "" H 9900 7600 50  0001 C CNN
+F 3 "" H 9900 7600 50  0001 C CNN
+	1    9900 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 7600 9900 7500
+Wire Wire Line
+	9900 7200 9900 7150
+$Comp
+L Device:R R?
+U 1 1 5E95C74B
+P 10100 3500
+F 0 "R?" V 9841 3500 50  0000 C CNN
+F 1 "7.87k" V 9932 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 10004 3500 25  0000 C CNN
+F 3 "~" H 10100 3500 50  0001 C CNN
+	1    10100 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E95C755
+P 10300 3700
+F 0 "#PWR?" H 10300 3450 50  0001 C CNN
+F 1 "GND" H 10305 3527 50  0000 C CNN
+F 2 "" H 10300 3700 50  0001 C CNN
+F 3 "" H 10300 3700 50  0001 C CNN
+	1    10300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 3700 10300 3500
+Wire Wire Line
+	10300 3500 10250 3500
+Wire Wire Line
+	9850 4200 9850 3500
+Wire Wire Line
+	9850 3500 9950 3500
+Text HLabel 9500 4100 0    50   Input ~ 0
+PCLK_A
+Text HLabel 9500 4200 0    50   Output ~ 0
+PDM_CVS_TE_A
+Wire Wire Line
+	9500 4200 9850 4200
+Connection ~ 9850 4200
+Text HLabel 9500 4300 0    50   Input ~ 0
+VSYNC_A
+Text HLabel 9500 4400 0    50   Input ~ 0
+HSYNC_A
+Text HLabel 9500 4500 0    50   Input ~ 0
+DATEN_A
+Wire Bus Line
+	9500 4600 9550 4600
+Text HLabel 9500 4600 0    50   Input ~ 0
+PDAT_A_[23..0]
+Entry Wire Line
+	9550 4700 9650 4600
+Wire Wire Line
+	9500 4100 10250 4100
+Wire Wire Line
+	9500 4500 10250 4500
+Wire Wire Line
+	9500 4300 10250 4300
+Wire Wire Line
+	9900 7000 10250 7000
+Wire Wire Line
+	9500 4400 10250 4400
+Wire Wire Line
+	10250 4200 9850 4200
+Wire Wire Line
+	9650 4600 10250 4600
+$Comp
+L TexasInstruments_DLP:DLPC3437 U?
+U 4 1 5E95C774
+P 10250 4100
+F 0 "U?" H 10450 4350 60  0000 L CNN
+F 1 "DLPC3437" H 10450 4250 60  0000 L CNN
+F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 11250 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 10250 4100 50  0001 C CNN
+	4    10250 4100
+	1    0    0    -1  
+$EndComp
+Text Label 9650 4600 0    50   ~ 0
+PDAT_A_0
+Entry Wire Line
+	9550 4800 9650 4700
+Wire Wire Line
+	9650 4700 10250 4700
+Text Label 9650 4700 0    50   ~ 0
+PDAT_A_1
+Entry Wire Line
+	9550 4900 9650 4800
+Wire Wire Line
+	9650 4800 10250 4800
+Text Label 9650 4800 0    50   ~ 0
+PDAT_A_2
+Entry Wire Line
+	9550 5000 9650 4900
+Wire Wire Line
+	9650 4900 10250 4900
+Text Label 9650 4900 0    50   ~ 0
+PDAT_A_3
+Entry Wire Line
+	9550 5100 9650 5000
+Wire Wire Line
+	9650 5000 10250 5000
+Text Label 9650 5000 0    50   ~ 0
+PDAT_A_4
+Entry Wire Line
+	9550 5200 9650 5100
+Wire Wire Line
+	9650 5100 10250 5100
+Text Label 9650 5100 0    50   ~ 0
+PDAT_A_5
+Entry Wire Line
+	9550 5300 9650 5200
+Wire Wire Line
+	9650 5200 10250 5200
+Text Label 9650 5200 0    50   ~ 0
+PDAT_A_6
+Entry Wire Line
+	9550 5400 9650 5300
+Wire Wire Line
+	9650 5300 10250 5300
+Text Label 9650 5300 0    50   ~ 0
+PDAT_A_7
+Entry Wire Line
+	9550 5500 9650 5400
+Wire Wire Line
+	9650 5400 10250 5400
+Text Label 9650 5400 0    50   ~ 0
+PDAT_A_8
+Entry Wire Line
+	9550 5600 9650 5500
+Wire Wire Line
+	9650 5500 10250 5500
+Text Label 9650 5500 0    50   ~ 0
+PDAT_A_9
+Entry Wire Line
+	9550 5700 9650 5600
+Wire Wire Line
+	9650 5600 10250 5600
+Text Label 9650 5600 0    50   ~ 0
+PDAT_A_10
+Entry Wire Line
+	9550 5800 9650 5700
+Wire Wire Line
+	9650 5700 10250 5700
+Text Label 9650 5700 0    50   ~ 0
+PDAT_A_11
+Entry Wire Line
+	9550 5900 9650 5800
+Wire Wire Line
+	9650 5800 10250 5800
+Text Label 9650 5800 0    50   ~ 0
+PDAT_A_12
+Entry Wire Line
+	9550 6000 9650 5900
+Wire Wire Line
+	9650 5900 10250 5900
+Text Label 9650 5900 0    50   ~ 0
+PDAT_A_13
+Entry Wire Line
+	9550 6100 9650 6000
+Wire Wire Line
+	9650 6000 10250 6000
+Text Label 9650 6000 0    50   ~ 0
+PDAT_A_14
+Entry Wire Line
+	9550 6200 9650 6100
+Wire Wire Line
+	9650 6100 10250 6100
+Text Label 9650 6100 0    50   ~ 0
+PDAT_A_15
+Entry Wire Line
+	9550 6300 9650 6200
+Wire Wire Line
+	9650 6200 10250 6200
+Text Label 9650 6200 0    50   ~ 0
+PDAT_A_16
+Entry Wire Line
+	9550 6400 9650 6300
+Wire Wire Line
+	9650 6300 10250 6300
+Text Label 9650 6300 0    50   ~ 0
+PDAT_A_17
+Entry Wire Line
+	9550 6500 9650 6400
+Wire Wire Line
+	9650 6400 10250 6400
+Text Label 9650 6400 0    50   ~ 0
+PDAT_A_18
+Entry Wire Line
+	9550 6600 9650 6500
+Wire Wire Line
+	9650 6500 10250 6500
+Text Label 9650 6500 0    50   ~ 0
+PDAT_A_19
+Entry Wire Line
+	9550 6700 9650 6600
+Wire Wire Line
+	9650 6600 10250 6600
+Text Label 9650 6600 0    50   ~ 0
+PDAT_A_20
+Entry Wire Line
+	9550 6800 9650 6700
+Wire Wire Line
+	9650 6700 10250 6700
+Text Label 9650 6700 0    50   ~ 0
+PDAT_A_21
+Entry Wire Line
+	9550 6900 9650 6800
+Wire Wire Line
+	9650 6800 10250 6800
+Text Label 9650 6800 0    50   ~ 0
+PDAT_A_22
+Entry Wire Line
+	9550 7000 9650 6900
+Wire Wire Line
+	9650 6900 10250 6900
+Text Label 9650 6900 0    50   ~ 0
+PDAT_A_23
+Text Notes 10200 3100 0    50   ~ 0
+Slave
+Text Notes 6050 3100 0    50   ~ 0
+Master
+Text HLabel 9450 7150 0    50   Input ~ 0
+3DR_A
+Wire Wire Line
+	9450 7150 9900 7150
+Connection ~ 9900 7150
+Wire Wire Line
+	9900 7150 9900 7000
+Text HLabel 5450 7150 0    50   Input ~ 0
+3DR_B
+Wire Wire Line
+	5450 7150 5900 7150
+Connection ~ 5900 7150
+Wire Wire Line
+	5900 7150 5900 7000
+Wire Bus Line
+	5550 4600 5550 7000
+Wire Bus Line
+	9550 4600 9550 7000
+$EndSCHEMATC
