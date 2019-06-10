@@ -5,6 +5,18 @@ D Digital Micromirror Device (DMD) modulates light through rotating MEMs mirrors
 F http://www.ti.com/lit/ds/symlink/dlp3310.pdf
 $ENDCMP
 #
+$CMP DLPA3000
+D Integrated power managment for DLP chipsets  (6A LED drivers).
+K DLP
+F http://www.ti.com/lit/ds/symlink/dlpa3000.pdf
+$ENDCMP
+#
+$CMP DLPA3005
+D Integrated power managment for DLP chipsets (16A LED drivers).
+K DLP
+F http://www.ti.com/lit/ds/symlink/dlpa3005.pdf
+$ENDCMP
+#
 $CMP DLPC3437
 D Display Controller for DLP3310 (.33 1080p) TRP DMD
 K DLP
