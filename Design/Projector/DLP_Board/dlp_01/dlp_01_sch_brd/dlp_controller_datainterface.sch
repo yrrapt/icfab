@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:dlp_01-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 10
+Sheet 6 10
 Title "DLP Controller Data Interface"
 Date ""
 Rev ""

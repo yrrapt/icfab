@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:dlp_01-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 10
+Sheet 6 10
 Title "DLP Controller Data Interface"
 Date ""
 Rev ""
@@ -106,8 +107,8 @@ $Comp
 L TexasInstruments_DLP:DLPC3437 U?
 U 4 1 5E8F23F1
 P 6250 4100
-F 0 "U?" H 7081 2703 60  0000 L CNN
-F 1 "DLPC3437" H 7081 2597 60  0000 L CNN
+F 0 "U?" H 6450 4350 60  0000 L CNN
+F 1 "DLPC3437" H 6450 4250 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 7250 4450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 6250 4100 50  0001 C CNN
 	4    6250 4100
@@ -346,8 +347,8 @@ $Comp
 L TexasInstruments_DLP:DLPC3437 U?
 U 4 1 5E95C774
 P 10250 4100
-F 0 "U?" H 11081 2703 60  0000 L CNN
-F 1 "DLPC3437" H 11081 2597 60  0000 L CNN
+F 0 "U?" H 10450 4350 60  0000 L CNN
+F 1 "DLPC3437" H 10450 4250 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 11250 4450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 10250 4100 50  0001 C CNN
 	4    10250 4100
