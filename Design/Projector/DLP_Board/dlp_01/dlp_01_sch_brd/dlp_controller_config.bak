@@ -394,10 +394,10 @@ F 3 "" H 4300 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 2250 4300 2150
-Text HLabel 5900 3750 0    50   Output ~ 0
-mI2C_SCL
-Text HLabel 5900 3850 0    50   BiDi ~ 0
-mI2C_SDA
+Text HLabel 5400 3750 0    50   Output ~ 0
+mI2C0_SCL
+Text HLabel 5400 3850 0    50   BiDi ~ 0
+mI2C0_SDA
 Wire Wire Line
 	5900 3850 6100 3850
 Wire Wire Line
@@ -448,10 +448,10 @@ Wire Wire Line
 	4250 4000 4250 3900
 Wire Wire Line
 	4850 3900 4850 4000
-Text HLabel 3350 4350 0    50   Output ~ 0
-mI2C_SCL
-Text HLabel 3350 4450 0    50   BiDi ~ 0
-mI2C_SDA
+Text HLabel 2900 4350 0    50   Output ~ 0
+mI2C1_SCL
+Text HLabel 2900 4450 0    50   BiDi ~ 0
+mI2C1_SDA
 $Comp
 L Memory_Flash:W25Q32JVSS U?
 U 1 1 5E583ABB
@@ -686,14 +686,14 @@ F 3 "" H 11950 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11950 2250 11950 2150
-Text HLabel 13550 3750 0    50   Output ~ 0
-sI2C_SCL
-Text HLabel 13550 3850 0    50   BiDi ~ 0
-sI2C_SDA
+Text HLabel 13050 3750 0    50   Output ~ 0
+sI2C0_SCL
+Text HLabel 13050 3850 0    50   BiDi ~ 0
+sI2C0_SDA
 Wire Wire Line
-	13550 3850 13750 3850
+	13050 3850 13250 3850
 Wire Wire Line
-	13550 3750 13750 3750
+	13050 3750 13250 3750
 $Comp
 L Device:R R?
 U 1 1 5E583B3F
@@ -739,10 +739,10 @@ Wire Wire Line
 	11900 4000 11900 3900
 Wire Wire Line
 	12500 3900 12500 4000
-Text HLabel 11050 4350 0    50   Output ~ 0
-sI2C_SCL
-Text HLabel 11050 4450 0    50   BiDi ~ 0
-sI2C_SDA
+Text HLabel 10650 4350 0    50   Output ~ 0
+sI2C1_SCL
+Text HLabel 10650 4450 0    50   BiDi ~ 0
+sI2C1_SDA
 Wire Wire Line
 	13350 5300 13750 5300
 NoConn ~ 13750 4850
@@ -892,13 +892,10 @@ Connection ~ 12500 4350
 Wire Wire Line
 	11050 4450 11900 4450
 Connection ~ 11900 4450
-Text HLabel 11050 4650 0    50   Output ~ 0
+Text HLabel 11050 4950 0    50   Output ~ 0
 sHOST_IRQ
 Wire Wire Line
-	11050 4650 11300 4650
-Wire Wire Line
 	11300 4300 11300 4650
-Connection ~ 11300 4650
 Wire Wire Line
 	11300 4650 13750 4650
 Wire Wire Line
@@ -917,10 +914,8 @@ F 3 "~" H 3650 4150 50  0001 C CNN
 	1    3650 4150
 	1    0    0    -1  
 $EndComp
-Text HLabel 3350 4650 0    50   Output ~ 0
+Text HLabel 3450 4950 0    50   Output ~ 0
 mHOST_IRQ
-Wire Wire Line
-	3350 4650 3650 4650
 Wire Wire Line
 	3350 4350 4850 4350
 Connection ~ 4850 4350
@@ -1194,4 +1189,117 @@ Wire Wire Line
 	8500 7750 8500 7250
 Wire Wire Line
 	8500 7250 8750 7250
+$Comp
+L Device:R R?
+U 1 1 5E9414B5
+P 13400 3750
+F 0 "R?" V 13141 3750 50  0000 C CNN
+F 1 "0R" V 13232 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 13304 3750 25  0000 C CNN
+F 3 "~" H 13400 3750 50  0001 C CNN
+	1    13400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E941DED
+P 13400 3850
+F 0 "R?" V 13141 3850 50  0000 C CNN
+F 1 "0R" V 13232 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 13304 3850 25  0000 C CNN
+F 3 "~" H 13400 3850 50  0001 C CNN
+	1    13400 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13550 3750 13750 3750
+Wire Wire Line
+	13550 3850 13750 3850
+$Comp
+L Device:R R?
+U 1 1 5E962D93
+P 10900 4350
+F 0 "R?" V 10641 4350 50  0000 C CNN
+F 1 "0R" V 10732 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 10804 4350 25  0000 C CNN
+F 3 "~" H 10900 4350 50  0001 C CNN
+	1    10900 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E962D9D
+P 10900 4450
+F 0 "R?" V 10641 4450 50  0000 C CNN
+F 1 "0R" V 10732 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 10804 4450 25  0000 C CNN
+F 3 "~" H 10900 4450 50  0001 C CNN
+	1    10900 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11050 4950 11300 4950
+Wire Wire Line
+	11300 4950 11300 4650
+Connection ~ 11300 4650
+Wire Wire Line
+	10650 4350 10750 4350
+Wire Wire Line
+	10750 4450 10650 4450
+$Comp
+L Device:R R?
+U 1 1 5E9CD6E4
+P 5750 3750
+F 0 "R?" V 5491 3750 50  0000 C CNN
+F 1 "0R" V 5582 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5654 3750 25  0000 C CNN
+F 3 "~" H 5750 3750 50  0001 C CNN
+	1    5750 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E9CD6EE
+P 5750 3850
+F 0 "R?" V 5491 3850 50  0000 C CNN
+F 1 "0R" V 5582 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5654 3850 25  0000 C CNN
+F 3 "~" H 5750 3850 50  0001 C CNN
+	1    5750 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 3850 5600 3850
+Wire Wire Line
+	5400 3750 5600 3750
+$Comp
+L Device:R R?
+U 1 1 5EA29549
+P 3200 4350
+F 0 "R?" V 2941 4350 50  0000 C CNN
+F 1 "0R" V 3032 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3104 4350 25  0000 C CNN
+F 3 "~" H 3200 4350 50  0001 C CNN
+	1    3200 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA29553
+P 3200 4450
+F 0 "R?" V 2941 4450 50  0000 C CNN
+F 1 "0R" V 3032 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3104 4450 25  0000 C CNN
+F 3 "~" H 3200 4450 50  0001 C CNN
+	1    3200 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 4950 3650 4950
+Wire Wire Line
+	3650 4950 3650 4650
+Wire Wire Line
+	2900 4350 3050 4350
+Wire Wire Line
+	3050 4450 2900 4450
 $EndSCHEMATC
