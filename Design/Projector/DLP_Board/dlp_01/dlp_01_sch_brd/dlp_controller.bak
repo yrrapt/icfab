@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 10
+Sheet 2 11
 Title ""
 Date ""
 Rev ""
@@ -15,13 +15,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1400 9300 850  1250
+S 7500 5250 850  1250
 U 5CFF2D84
 F0 "dlp_controller_power" 50
 F1 "dlp_controller_power.sch" 50
 $EndSheet
 $Sheet
-S 2900 5550 750  1200
+S 2900 5550 1150 2300
 U 5D57FAF8
 F0 "dlp_controller_gpio" 50
 F1 "dlp_controller_gpio.sch" 50
@@ -34,6 +34,14 @@ F7 "SPI1_CSZ0" O L 2900 6000 50
 F8 "SPI1_DOUT" O L 2900 5900 50 
 F9 "SPI1_CLK" O L 2900 5700 50 
 F10 "SPI1_DIN" I L 2900 5800 50 
+F11 "LABB_SAMPLE" O L 2900 6700 50 
+F13 "MTR_SENS_POWER_OUT" O L 2900 7250 50 
+F14 "SENS_FOCUS_OUT" O L 2900 7350 50 
+F15 "LS2_PWR" O L 2900 6950 50 
+F16 "SENS_LABB_OUT" O L 2900 7450 50 
+F17 "SENS_WPC_OUT" O L 2900 7550 50 
+F18 "SENS_THERM_OUT" O L 2900 7650 50 
+F19 "THERM_PWR" O L 2900 7050 50 
 $EndSheet
 $Sheet
 S 2350 1350 1500 2350
@@ -461,4 +469,36 @@ NoConn ~ 2350 2250
 NoConn ~ 2350 2350
 NoConn ~ 2350 2450
 NoConn ~ 2350 2550
+Text HLabel 2700 6700 0    50   Output ~ 0
+LABB_SAMPLE
+Wire Wire Line
+	2700 6700 2900 6700
+Text HLabel 2700 6950 0    50   Output ~ 0
+LS2_PWR
+Text HLabel 2700 7050 0    50   Output ~ 0
+THERM_PWR
+Text HLabel 2700 7250 0    50   Output ~ 0
+MTR_SENS_POWER_OUT
+Text HLabel 2700 7350 0    50   Output ~ 0
+SENS_FOCUS_OUT
+Text HLabel 2700 7450 0    50   Output ~ 0
+SENS_LABB_OUT
+Text HLabel 2700 7550 0    50   Output ~ 0
+SENS_WPC_OUT
+Text HLabel 2700 7650 0    50   Output ~ 0
+SENS_THERM_OUT
+Wire Wire Line
+	2700 6950 2900 6950
+Wire Wire Line
+	2900 7050 2700 7050
+Wire Wire Line
+	2700 7250 2900 7250
+Wire Wire Line
+	2900 7350 2700 7350
+Wire Wire Line
+	2700 7450 2900 7450
+Wire Wire Line
+	2700 7550 2900 7550
+Wire Wire Line
+	2900 7650 2700 7650
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 10
+Sheet 7 11
 Title "DLP Controller DMD Interface"
 Date ""
 Rev ""
@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TexasInstruments_DLP:DLPC3437 U?
+L TexasInstruments_DLP:DLPC3437 U1
 U 2 1 5E74540B
 P 5300 3650
-F 0 "U?" H 5500 3900 60  0000 L CNN
+F 0 "U1" H 5500 3900 60  0000 L CNN
 F 1 "DLPC3437" H 5500 3800 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 6300 4000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 5300 3650 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 5300 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TexasInstruments_DLP:DLPC3437 U?
+L TexasInstruments_DLP:DLPC3437 U1
 U 3 1 5E749109
 P 5300 2600
-F 0 "U?" H 5500 2850 60  0000 L CNN
+F 0 "U1" H 5500 2850 60  0000 L CNN
 F 1 "DLPC3437" H 5500 2750 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 6300 2950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 5300 2600 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 5300 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R52
 U 1 1 5E75B3C3
 P 4700 2400
-F 0 "R?" V 4441 2400 50  0000 C CNN
+F 0 "R52" V 4441 2400 50  0000 C CNN
 F 1 "43R" V 4532 2400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4604 2400 25  0000 C CNN
 F 3 "~" H 4700 2400 50  0001 C CNN
@@ -48,10 +48,10 @@ F 3 "~" H 4700 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R53
 U 1 1 5E75C13B
 P 4700 2800
-F 0 "R?" V 4441 2800 50  0000 C CNN
+F 0 "R53" V 4441 2800 50  0000 C CNN
 F 1 "43R" V 4532 2800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4604 2800 25  0000 C CNN
 F 3 "~" H 4700 2800 50  0001 C CNN
@@ -139,10 +139,10 @@ Wire Wire Line
 Wire Wire Line
 	5000 2400 4850 2400
 $Comp
-L TexasInstruments_DLP:DLPC3437 U?
+L TexasInstruments_DLP:DLPC3437 U2
 U 2 1 5E7CF28C
 P 10600 3650
-F 0 "U?" H 10800 3900 60  0000 L CNN
+F 0 "U2" H 10800 3900 60  0000 L CNN
 F 1 "DLPC3437" H 10800 3800 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 11600 4000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 10600 3650 50  0001 C CNN
@@ -150,10 +150,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 10600 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TexasInstruments_DLP:DLPC3437 U?
+L TexasInstruments_DLP:DLPC3437 U2
 U 3 1 5E7CF292
 P 10600 2650
-F 0 "U?" H 10800 2900 60  0000 L CNN
+F 0 "U2" H 10800 2900 60  0000 L CNN
 F 1 "DLPC3437" H 10800 2800 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 11600 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 10600 2650 50  0001 C CNN
