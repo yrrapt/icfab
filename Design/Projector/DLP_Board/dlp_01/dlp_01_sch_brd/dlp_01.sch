@@ -429,17 +429,6 @@ SENS_THERM_OUT
 Wire Wire Line
 	10250 6650 9350 6650
 $Comp
-L Connector:Screw_Terminal_01x03 J6
-U 1 1 5DBFE081
-P 14200 2800
-F 0 "J6" H 14280 2868 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 14280 2777 50  0000 L CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 14280 2705 25  0000 L CNN
-F 3 "~" H 14200 2800 50  0001 C CNN
-	1    14200 2800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0121
 U 1 1 5DC07DE7
 P 13900 3050
@@ -462,17 +451,6 @@ Text Label 12950 2700 0    50   ~ 0
 MTR_SENS_POWER_OUT
 Text Label 12950 2800 0    50   ~ 0
 SENS_FOCUS
-$Comp
-L Connector:Screw_Terminal_01x03 J7
-U 1 1 5DC4AEBF
-P 14200 3650
-F 0 "J7" H 14280 3718 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 14280 3627 50  0000 L CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 14280 3555 25  0000 L CNN
-F 3 "~" H 14200 3650 50  0001 C CNN
-	1    14200 3650
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0122
 U 1 1 5DC4AEC9
@@ -497,17 +475,6 @@ LS2_PWR
 Text Label 12950 3650 0    50   ~ 0
 SENS_LABB
 $Comp
-L Connector:Screw_Terminal_01x03 J8
-U 1 1 5DC57EB3
-P 14200 4550
-F 0 "J8" H 14280 4618 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 14280 4527 50  0000 L CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 14280 4455 25  0000 L CNN
-F 3 "~" H 14200 4550 50  0001 C CNN
-	1    14200 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0123
 U 1 1 5DC57EBD
 P 13900 4800
@@ -530,17 +497,6 @@ Text Label 12950 4450 0    50   ~ 0
 LS_PWR
 Text Label 12950 4550 0    50   ~ 0
 SENS_WPC
-$Comp
-L Connector:Screw_Terminal_01x03 J9
-U 1 1 5DC57ECD
-P 14200 5400
-F 0 "J9" H 14280 5468 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 14280 5377 50  0000 L CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 14280 5305 25  0000 L CNN
-F 3 "~" H 14200 5400 50  0001 C CNN
-	1    14200 5400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0124
 U 1 1 5DC57ED7
@@ -613,4 +569,59 @@ Wire Wire Line
 Wire Wire Line
 	4650 8400 5300 8400
 NoConn ~ 4650 7200
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5D6C113E
+P 14200 2800
+F 0 "J6" H 14172 2850 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 14172 2759 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm_SMD_Pin1Left" H 14172 2687 25  0000 R CNN
+F 3 "~" H 14200 2800 50  0001 C CNN
+	1    14200 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J7
+U 1 1 5D6D14C7
+P 14200 3650
+F 0 "J7" H 14172 3700 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 14172 3609 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm_SMD_Pin1Left" H 14172 3537 25  0000 R CNN
+F 3 "~" H 14200 3650 50  0001 C CNN
+	1    14200 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J8
+U 1 1 5D6D7EFB
+P 14200 4550
+F 0 "J8" H 14172 4600 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 14172 4509 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm_SMD_Pin1Left" H 14172 4437 25  0000 R CNN
+F 3 "~" H 14200 4550 50  0001 C CNN
+	1    14200 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J9
+U 1 1 5D6DEB5D
+P 14200 5400
+F 0 "J9" H 14172 5450 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 14172 5359 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm_SMD_Pin1Left" H 14172 5287 25  0000 R CNN
+F 3 "~" H 14200 5400 50  0001 C CNN
+	1    14200 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5D747231
+P 1000 10050
+F 0 "H?" H 1100 10099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1100 10008 50  0000 L CNN
+F 2 "" H 1000 10050 50  0001 C CNN
+F 3 "~" H 1000 10050 50  0001 C CNN
+	1    1000 10050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

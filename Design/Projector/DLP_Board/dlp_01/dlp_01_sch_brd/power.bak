@@ -399,7 +399,9 @@ $Comp
 L Connector:Screw_Terminal_01x03 J?
 U 1 1 5DF838E9
 P 1750 2600
-F 0 "J?" H 1668 2969 50  0000 C CNN
+AR Path="/5DF838E9" Ref="J?"  Part="1" 
+AR Path="/5D37DB5E/5DF838E9" Ref="J10"  Part="1" 
+F 0 "J10" H 1668 2969 50  0000 C CNN
 F 1 "Screw_Terminal_01x03" H 1668 2878 50  0000 C CNN
 F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 1668 2806 25  0000 C CNN
 F 3 "~" H 1750 2600 50  0001 C CNN
