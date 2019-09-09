@@ -1,0 +1,4 @@
+
+# ignore log files
+*.log
+*.jou
