@@ -25,7 +25,6 @@ F 3 "" H 2550 3650 50  0001 C CNN
 	1    2550 3650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1800 3500
 Wire Wire Line
 	2550 3650 2550 3300
 $Comp
@@ -395,35 +394,22 @@ F 3 "~" H 1850 3160 50  0001 C CNN
 	1    1800 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x03 J?
-U 1 1 5DF838E9
-P 1750 2600
-AR Path="/5DF838E9" Ref="J?"  Part="1" 
-AR Path="/5D37DB5E/5DF838E9" Ref="J10"  Part="1" 
-F 0 "J10" H 1668 2969 50  0000 C CNN
-F 1 "Screw_Terminal_01x03" H 1668 2878 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 1668 2806 25  0000 C CNN
-F 3 "~" H 1750 2600 50  0001 C CNN
-	1    1750 2600
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 3100 2800 3100
 Connection ~ 3150 3100
-Wire Wire Line
-	1950 2500 2800 2500
-Wire Wire Line
-	2800 2500 2800 3100
-Connection ~ 2800 3100
-Wire Wire Line
-	2800 3100 3150 3100
 Wire Wire Line
 	2100 3300 2550 3300
 Wire Wire Line
-	2550 3300 2550 2700
+	2100 3100 3150 3100
+$Comp
+L power:GND #PWR0142
+U 1 1 5D8D24F6
+P 1800 3650
+F 0 "#PWR0142" H 1800 3400 50  0001 C CNN
+F 1 "GND" H 1805 3477 50  0000 C CNN
+F 2 "" H 1800 3650 50  0001 C CNN
+F 3 "" H 1800 3650 50  0001 C CNN
+	1    1800 3650
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2550 2700 1950 2700
-Connection ~ 2550 3300
-NoConn ~ 1950 2600
+	1800 3500 1800 3650
 $EndSCHEMATC

@@ -38,8 +38,6 @@ F 3 "" H 5900 7600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 7600 5900 7500
-Wire Wire Line
-	5900 7200 5900 7150
 $Comp
 L Device:R R49
 U 1 1 5E8FC7AE
@@ -278,8 +276,6 @@ F 3 "" H 9900 7600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9900 7600 9900 7500
-Wire Wire Line
-	9900 7200 9900 7150
 $Comp
 L Device:R R51
 U 1 1 5E95C74B
@@ -498,20 +494,10 @@ Text Notes 10200 3100 0    50   ~ 0
 Slave
 Text Notes 6050 3100 0    50   ~ 0
 Master
-Text HLabel 9450 7150 0    50   Input ~ 0
-3DR_A
 Wire Wire Line
-	9450 7150 9900 7150
-Connection ~ 9900 7150
+	9900 7000 9900 7200
 Wire Wire Line
-	9900 7150 9900 7000
-Text HLabel 5450 7150 0    50   Input ~ 0
-3DR_B
-Wire Wire Line
-	5450 7150 5900 7150
-Connection ~ 5900 7150
-Wire Wire Line
-	5900 7150 5900 7000
+	5900 7000 5900 7200
 Wire Bus Line
 	5550 4600 5550 7000
 Wire Bus Line
