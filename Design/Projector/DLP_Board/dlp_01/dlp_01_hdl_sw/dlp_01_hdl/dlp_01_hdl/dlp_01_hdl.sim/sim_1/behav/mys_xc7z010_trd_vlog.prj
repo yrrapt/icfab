@@ -1,0 +1,5 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../mys-xc7z020-trd.srcs/sources_1/bd/zturn_7z020/hdl/zturn_7z020_wrapper.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"

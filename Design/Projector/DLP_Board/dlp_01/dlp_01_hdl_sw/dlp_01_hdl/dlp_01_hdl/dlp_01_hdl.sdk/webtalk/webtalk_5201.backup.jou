@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# 
+# Start of session at: Fri Aug 23 22:05:59 2019
+# Process ID: 5201
+# Current directory: /home/tom/icfab/Design/Projector/DLP_Board/dlp_01/dlp_01_hdl_sw/dlp_01_hdl/dlp_01_hdl/dlp_01_hdl.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/tom/icfab/Design/Projector/DLP_Board/dlp_01/dlp_01_hdl_sw/dlp_01_hdl/dlp_01_hdl/dlp_01_hdl.sdk/webtalk/webtalk.log
+# Journal file: /home/tom/icfab/Design/Projector/DLP_Board/dlp_01/dlp_01_hdl_sw/dlp_01_hdl/dlp_01_hdl/dlp_01_hdl.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
