@@ -1,4 +1,4 @@
-(module DLP3310 (layer F.Cu) (tedit 5CFC261F)
+(module DLP3310 (layer F.Cu) (tedit 5D79463F)
   (fp_text reference REF** (at 0.33 1.03) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -167,9 +167,9 @@
   (pad A21 smd rect (at 5.9448 -2.5984) (size 0.52 0.52) (layers F.Cu F.Paste F.Mask))
   (pad A20 smd rect (at 5.2024 -2.5984) (size 0.52 0.52) (layers F.Cu F.Paste F.Mask))
   (pad A19 smd rect (at 4.46 -2.5984) (size 0.52 0.52) (layers F.Cu F.Paste F.Mask))
-  (model /home/tom/Dropbox/Libraries/KiCad/3D/DLP3310.wrl
-    (at (xyz 0 0 0))
+  (model /home/tom/icfab/Libraries/3D/DLP3310_with_interposer.step
+    (offset (xyz 6.9 0.7 -10.15))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz 90 0 0))
   )
 )
