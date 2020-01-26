@@ -19,7 +19,7 @@ U 1 1 5EBD52FD
 P 6850 7900
 F 0 "J1" H 6900 10017 50  0000 C CNN
 F 1 "Conn_02x40_Odd_Even" H 6900 9926 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x40_Pitch1.27mm_SMD" H 6900 10100 25  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x40_Pitch1.27mm_SMD" H 6850 7900 25  0000 C CNN
 F 3 "~" H 6850 7900 50  0001 C CNN
 	1    6850 7900
 	-1   0    0    -1  

@@ -386,8 +386,6 @@ $Comp
 L dlp_01-rescue:Barrel_Jack_MountingPin-Connector J3
 U 1 1 5DF1DF1C
 P 1800 3200
-AR Path="/5DF1DF1C" Ref="J3"  Part="1" 
-AR Path="/5D37DB5E/5DF1DF1C" Ref="J3"  Part="1" 
 F 0 "J3" H 1857 3517 50  0000 C CNN
 F 1 "Barrel_Jack_MountingPin" H 1857 3426 50  0000 C CNN
 F 2 "Connectors:BARREL_JACK" H 1850 3160 50  0001 C CNN
