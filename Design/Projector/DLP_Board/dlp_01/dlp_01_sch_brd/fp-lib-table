@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name SC-70-5)(type KiCad)(uri /home/tom/icfab/Libraries/KiCad/Footprints/SC-70-5.pretty)(options "")(descr ""))
-  (lib (name ZEZ0201A)(type KiCad)(uri /home/tom/icfab/Libraries/KiCad/Footprints/ZEZ0201A.pretty)(options "")(descr ""))
+  (lib (name SC-70-5)(type KiCad)(uri ${KIPRJMOD}/../../../../../Libraries/KiCad/Footprints/SC-70-5.pretty)(options "")(descr ""))
+  (lib (name ZEZ0201A)(type KiCad)(uri ${KIPRJMOD}/../../../../../Libraries/KiCad/Footprints/ZEZ0201A.pretty)(options "")(descr ""))
 )

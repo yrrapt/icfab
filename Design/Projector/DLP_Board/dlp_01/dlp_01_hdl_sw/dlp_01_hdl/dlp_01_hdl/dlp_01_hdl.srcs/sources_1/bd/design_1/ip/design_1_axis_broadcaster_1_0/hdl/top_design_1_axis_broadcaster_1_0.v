@@ -131,7 +131,7 @@ wire [(C_NUM_MI_SLOTS*C_S_AXIS_TDATA_WIDTH/8)-1:0]          m_axis_tkeep_i;
 wire [(C_NUM_MI_SLOTS*C_S_AXIS_TDATA_WIDTH/8)-1:0]          m_axis_tstrb_i;
 wire [(C_NUM_MI_SLOTS*C_S_AXIS_TUSER_WIDTH)-1:0]            m_axis_tuser_i;
 
-axis_broadcaster_v1_1_17_core #(
+axis_broadcaster_v1_1_18_core #(
 .C_FAMILY (C_FAMILY),
 .C_NUM_MI_SLOTS ( C_NUM_MI_SLOTS ),
 .C_AXIS_TDATA_WIDTH ( C_S_AXIS_TDATA_WIDTH ),

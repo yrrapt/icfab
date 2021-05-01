@@ -1,0 +1,12 @@
+Stack up order as follows:
+
+Top Silkscreen:      dlp_01-F.SilkS.gbr
+Top Soldermask:      dlp_01-F.Mask.gbr
+Top Copper:          dlp_01-F.Cu.gbr
+Internal 1 Copper:   dlp_01-In1.Cu.gbr
+Internal 2 Copper:   dlp_01-In2.Cu.gbr
+Internal 3 Copper:   dlp_01-In3.Cu.gbr
+Internal 4 Copper:   dlp_01-In4.Cu.gbr
+Bottom Copper:       dlp_01-B.Cu.gbr
+Bottom Soldermask:   dlp_01-B.Mask.gbr
+Bottom Silkscreen:   dlp_01-B.SilkS.gbr

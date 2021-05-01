@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:dlp_01-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -32,8 +33,9 @@ U 1 1 5D385C13
 P 3150 3400
 F 0 "C93" H 3265 3472 50  0000 L CNN
 F 1 "22u" H 3265 3381 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3265 3309 25  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3265 3309 25  0000 L CNN
 F 3 "~" H 3150 3400 50  0001 C CNN
+F 4 "12063D226MAT2A" H 0   0   50  0001 C CNN "part-num"
 	1    3150 3400
 	1    0    0    -1  
 $EndComp
@@ -58,8 +60,9 @@ AR Path="/5D385C20" Ref="R?"  Part="1"
 AR Path="/5D37DB5E/5D385C20" Ref="R91"  Part="1" 
 F 0 "R91" V 3341 3100 50  0000 C CNN
 F 1 "0R" V 3432 3100 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 3504 3100 25  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3504 3100 25  0000 C CNN
 F 3 "~" H 3600 3100 50  0001 C CNN
+F 4 "CRCW12060000Z0EAC" H 0   0   50  0001 C CNN "part-num"
 	1    3600 3100
 	0    1    1    0   
 $EndComp
@@ -69,8 +72,9 @@ U 1 1 5D385C26
 P 4000 3400
 F 0 "C94" H 4115 3472 50  0000 L CNN
 F 1 "22u" H 4115 3381 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 4115 3309 25  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4115 3309 25  0000 L CNN
 F 3 "~" H 4000 3400 50  0001 C CNN
+F 4 "12063D226MAT2A" H 0   0   50  0001 C CNN "part-num"
 	1    4000 3400
 	1    0    0    -1  
 $EndComp
@@ -131,13 +135,16 @@ Wire Wire Line
 Wire Wire Line
 	9450 3150 9450 2900
 $Comp
-L Converter_DCDC:RPM5.0-3.0 U8
+L dlp_01-rescue:RPM5.0-3.0-Converter_DCDC U8
 U 1 1 5D389ECF
 P 6450 3450
+AR Path="/5D389ECF" Ref="U8"  Part="1" 
+AR Path="/5D37DB5E/5D389ECF" Ref="U8"  Part="1" 
 F 0 "U8" H 6450 4017 50  0000 C CNN
 F 1 "RPM5.0-3.0" H 6450 3926 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_RECOM_RPMx.x-x.0" H 6500 2650 25  0000 C CNN
+F 2 "RECOM:Converter_DCDC_RECOM_RPMx.x-x.0" H 6500 2650 25  0000 C CNN
 F 3 "https://www.recom-power.com/pdf/Innoline/RPM-3.0.pdf" H 6425 3500 50  0001 C CNN
+F 4 "RPM5.0-3.0" H 0   0   50  0001 C CNN "part-num"
 	1    6450 3450
 	1    0    0    -1  
 $EndComp
@@ -164,8 +171,10 @@ AR Path="/5D3967CF" Ref="R?"  Part="1"
 AR Path="/5D37DB5E/5D3967CF" Ref="R93"  Part="1" 
 F 0 "R93" V 7191 3400 50  0000 C CNN
 F 1 "NF" V 7282 3400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7354 3400 25  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7354 3400 25  0000 C CNN
 F 3 "~" H 7450 3400 50  0001 C CNN
+F 4 "NF" H 0   0   50  0001 C CNN "part-num"
+F 5 "TRUE" H 0   0   50  0001 C CNN "DNP"
 	1    7450 3400
 	-1   0    0    1   
 $EndComp
@@ -177,8 +186,10 @@ AR Path="/5D397025" Ref="R?"  Part="1"
 AR Path="/5D37DB5E/5D397025" Ref="R94"  Part="1" 
 F 0 "R94" V 7191 3800 50  0000 C CNN
 F 1 "NF" V 7282 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7354 3800 25  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7354 3800 25  0000 C CNN
 F 3 "~" H 7450 3800 50  0001 C CNN
+F 4 "NF" H 0   0   50  0001 C CNN "part-num"
+F 5 "TRUE" H 0   0   50  0001 C CNN "DNP"
 	1    7450 3800
 	-1   0    0    1   
 $EndComp
@@ -227,8 +238,10 @@ AR Path="/5D399D16" Ref="R?"  Part="1"
 AR Path="/5D37DB5E/5D399D16" Ref="R92"  Part="1" 
 F 0 "R92" V 5441 3350 50  0000 C CNN
 F 1 "NF" V 5532 3350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5604 3350 25  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5604 3350 25  0000 C CNN
 F 3 "~" H 5700 3350 50  0001 C CNN
+F 4 "NF" H 0   0   50  0001 C CNN "part-num"
+F 5 "TRUE" H 0   0   50  0001 C CNN "DNP"
 	1    5700 3350
 	0    -1   -1   0   
 $EndComp
@@ -240,8 +253,9 @@ U 1 1 5D39ACAB
 P 7900 4600
 F 0 "Q1" H 8106 4646 50  0000 L CNN
 F 1 "2N7000" H 8106 4555 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 8100 4525 25  0000 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8100 4525 25  0000 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 7900 4600 50  0001 L CNN
+F 4 "2N7000" H 0   0   50  0001 C CNN "part-num"
 	1    7900 4600
 	1    0    0    -1  
 $EndComp
@@ -251,8 +265,9 @@ U 1 1 5D39C244
 P 8000 4150
 F 0 "D5" V 8065 4033 50  0000 R CNN
 F 1 "LED" V 7974 4033 50  0000 R CNN
-F 2 "LEDs:LED_0603" V 7902 4033 25  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7902 4033 25  0000 R CNN
 F 3 "~" H 8000 4150 50  0001 C CNN
+F 4 "150060AS75000" H 0   0   50  0001 C CNN "part-num"
 	1    8000 4150
 	0    -1   -1   0   
 $EndComp
@@ -263,9 +278,10 @@ P 8000 3750
 AR Path="/5D3A1286" Ref="R?"  Part="1" 
 AR Path="/5D37DB5E/5D3A1286" Ref="R96"  Part="1" 
 F 0 "R96" V 7741 3750 50  0000 C CNN
-F 1 "5.7k" V 7832 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7904 3750 25  0000 C CNN
+F 1 "5.76k" V 7832 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7904 3750 25  0000 C CNN
 F 3 "~" H 8000 3750 50  0001 C CNN
+F 4 "CRCW06035K76FKEA" H 0   0   50  0001 C CNN "part-num"
 	1    8000 3750
 	-1   0    0    1   
 $EndComp
@@ -291,8 +307,10 @@ AR Path="/5D3AD729" Ref="R?"  Part="1"
 AR Path="/5D37DB5E/5D3AD729" Ref="R95"  Part="1" 
 F 0 "R95" V 7291 4900 50  0000 C CNN
 F 1 "NF" V 7382 4900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7454 4900 25  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7454 4900 25  0000 C CNN
 F 3 "~" H 7550 4900 50  0001 C CNN
+F 4 "NF" H 0   0   50  0001 C CNN "part-num"
+F 5 "TRUE" H 0   0   50  0001 C CNN "DNP"
 	1    7550 4900
 	-1   0    0    1   
 $EndComp
@@ -375,8 +393,10 @@ AR Path="/5D29B82E" Ref="R?"  Part="1"
 AR Path="/5D37DB5E/5D29B82E" Ref="R97"  Part="1" 
 F 0 "R97" V 8641 3150 50  0000 C CNN
 F 1 "NF" V 8732 3150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8804 3150 25  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8804 3150 25  0000 C CNN
 F 3 "~" H 8900 3150 50  0001 C CNN
+F 4 "NF" H 0   0   50  0001 C CNN "part-num"
+F 5 "TRUE" H 0   0   50  0001 C CNN "DNP"
 	1    8900 3150
 	0    -1   -1   0   
 $EndComp
@@ -390,8 +410,9 @@ AR Path="/5DF1DF1C" Ref="J3"  Part="1"
 AR Path="/5D37DB5E/5DF1DF1C" Ref="J3"  Part="1" 
 F 0 "J3" H 1857 3517 50  0000 C CNN
 F 1 "Barrel_Jack_MountingPin" H 1857 3426 50  0000 C CNN
-F 2 "Connectors:BARREL_JACK" H 1850 3160 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1850 3160 50  0001 C CNN
 F 3 "~" H 1850 3160 50  0001 C CNN
+F 4 "KLDHCX-0202-AC-1" H 0   0   50  0001 C CNN "part-num"
 	1    1800 3200
 	1    0    0    -1  
 $EndComp

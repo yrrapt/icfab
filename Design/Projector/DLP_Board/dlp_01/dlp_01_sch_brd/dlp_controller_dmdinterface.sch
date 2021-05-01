@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:dlp_01-cache
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -21,6 +22,7 @@ F 0 "U1" H 5500 3900 60  0000 L CNN
 F 1 "DLPC3437" H 5500 3800 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 6300 4000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 5300 3650 50  0001 C CNN
+F 4 "DLPC3437CZEZ" H 0   0   50  0001 C CNN "part-num"
 	2    5300 3650
 	1    0    0    -1  
 $EndComp
@@ -32,6 +34,7 @@ F 0 "U1" H 5500 2850 60  0000 L CNN
 F 1 "DLPC3437" H 5500 2750 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 6300 2950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 5300 2600 50  0001 C CNN
+F 4 "DLPC3437CZEZ" H 0   0   50  0001 C CNN "part-num"
 	3    5300 2600
 	1    0    0    -1  
 $EndComp
@@ -41,8 +44,9 @@ U 1 1 5E75B3C3
 P 4700 2400
 F 0 "R52" V 4441 2400 50  0000 C CNN
 F 1 "43R" V 4532 2400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 4604 2400 25  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4604 2400 25  0000 C CNN
 F 3 "~" H 4700 2400 50  0001 C CNN
+F 4 "CRCW060343R0FKEA" H 0   0   50  0001 C CNN "part-num"
 	1    4700 2400
 	0    1    1    0   
 $EndComp
@@ -52,8 +56,9 @@ U 1 1 5E75C13B
 P 4700 2800
 F 0 "R53" V 4441 2800 50  0000 C CNN
 F 1 "43R" V 4532 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 4604 2800 25  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4604 2800 25  0000 C CNN
 F 3 "~" H 4700 2800 50  0001 C CNN
+F 4 "CRCW060343R0FKEA" H 0   0   50  0001 C CNN "part-num"
 	1    4700 2800
 	0    1    1    0   
 $EndComp
@@ -145,6 +150,7 @@ F 0 "U2" H 10800 3900 60  0000 L CNN
 F 1 "DLPC3437" H 10800 3800 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 11600 4000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 10600 3650 50  0001 C CNN
+F 4 "DLPC3437CZEZ" H 0   0   50  0001 C CNN "part-num"
 	2    10600 3650
 	1    0    0    -1  
 $EndComp
@@ -156,6 +162,7 @@ F 0 "U2" H 10800 2900 60  0000 L CNN
 F 1 "DLPC3437" H 10800 2800 60  0000 L CNN
 F 2 "ZEZ0201A:BGA-225_15x15_13.1x13.1mm" H 11600 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/dlpc3437.pdf" H 10600 2650 50  0001 C CNN
+F 4 "DLPC3437CZEZ" H 0   0   50  0001 C CNN "part-num"
 	3    10600 2650
 	1    0    0    -1  
 $EndComp
